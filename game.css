@@ -1,0 +1,150 @@
+@font-face {
+    font-family: font;
+    src: url("Media/font.ttf"); 
+    
+}
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: font;
+}
+
+html {
+    height:100%;
+    width:100%;
+    overflow: hidden;
+}
+body {
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+  
+body {
+    align-content:space-around;
+    background-color:#202830;
+    color:#ffffff;
+    display:flex;
+    justify-content:center;
+  
+}
+
+#title {
+    width: 70vw;
+    height: 50vh;
+    font-size: 10vw;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    z-index: 1;
+    line-height: 0.85;
+}
+
+#win_gif {
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    top: 28%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a.button1 {
+    position: absolute;
+    display:inline-block;
+    padding:0.50em;
+    border:0.1em solid #e72a3a;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+    width: 25vw;
+    height: 12vh;
+    bottom: 2%;
+    font-size: 4vw;
+    z-index: 1;
+    color: #e72a3a;
+}
+
+a.button1:hover{
+    border:0.1em solid #007295;
+    background-color:#5bdaff;
+    color: #004C63;
+    text-decoration: none;
+}
+
+a.button1{
+    display:block;
+    margin:0.4em auto;
+
+}
+
+#mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#202830;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+/*  */
+
+@font-face {
+	font-family: "ubuntu";
+	font-style: italic;
+	font-weight: 300;
+	src: local("Lato Light Italic"), local("Lato-LightItalic"),
+		url(https://fonts.gstatic.com/s/ubuntucondensed/v8/u-4k0rCzjgs5J7oXnJcM_0kACGMtT-Dfqw.woff2)
+			format("woff2");
+}
+
+a {
+	text-decoration: none;
+	color: #9ca0b1;
+}
+
+.wrapper {
+    text-align: center;
+}
+	.title {
+		color: #fff;
+		font-size: 8vw !important;
+		font-family: "ubuntu";
+		text-transform: uppercase;
+		font-weight: 700;
+		font-family: "Josefin Sans", sans-serif;
+		background: linear-gradient(to right, #e72a3a 10%, #fff 50%, #5bdaff 60%);
+		background-size: auto auto;
+		background-clip: border-box;
+		background-size: 200% auto;
+		color: #fff;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: textclip 1.5s linear infinite;
+		display: inline-block;
+	}
+
+
+@keyframes textclip {
+	to {
+		background-position: 200% center;
+	}
+}
